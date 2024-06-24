@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { getAuth } from 'firebase/auth';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -32,5 +33,6 @@ function App() {
   )
 }
 
+export const auth = getAuth();
 export default App
 //si
