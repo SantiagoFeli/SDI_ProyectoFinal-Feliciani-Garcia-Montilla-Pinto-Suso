@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function()) {
+document.addEventListener('DOMContentLoaded', function(){
     var loginBtn = document.querySelector('.iniciar button');
     var loginModal = document.getElementById('loginModal');
     var closeLogin = document.getElementById('closeLogin');
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function()) {
     var registerBtn = document.querySelector('.registrate button');
     var registerModal = document.getElementById('registerModal');
     var closeRegister = document.getElementById('closeRegister');
-    
+
     loginBtn.addEventListener('click', function() {
         loginModal.style.display = 'block';
     });
@@ -24,4 +24,12 @@ document.addEventListener('DOMContentLoaded', function()) {
         registerModal.style.display = 'none';
     });
 
-}
+    window.addEventListener('click', function(event) {
+        if (event.target == loginModal) {
+            loginModal.style.display = 'none';
+        }
+        if (event.target == registerModal) {
+            registerModal.style.display = 'none';
+        }
+    });
+});
