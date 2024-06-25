@@ -16,6 +16,10 @@
     transition: all 0.5s;
 }
 
+.oferta .cafe img {
+    width: 500px;
+}
+
 .menu .logo {
     cursor: pointer;
 }
@@ -56,6 +60,14 @@
     border-radius: 20px;
     cursor: pointer;
 }
+
+.oferta button {
+    height: 35px;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
 .sesion .iniciar button {
     width: 140px;
     color:#582417;
@@ -69,6 +81,14 @@
     color:#FFF9F9;
     background:#1F516D;
     border: 2px solid #1F516D;
+}
+
+.oferta .suscribete button {
+    width: 300px;
+    color:#FFFFFF;
+    background:#F4AB2C;
+    margin: 0 40px;
+    border: 2px solid #F4AB2C;
 }
 
 .sesion .iniciar button:hover {
@@ -86,6 +106,13 @@
     border: 2px solid #1F516D;
 }
 
+.oferta .suscribete button:hover {
+    width: 300px;
+    background:#FFF9F9;
+    color:#F4AB2C;
+    border: 2px solid #F4AB2C;
+}
+
 hr {
     margin: 0;
     background-color: #C19063;
@@ -100,6 +127,30 @@ hr {
     height: 55px;
     background-color: #1F516D;
 }
+
+.oferta {
+    display: flex;
+    gap: 100px;
+    padding: 32px;
+    max-width: 1200px;
+}
+
+.oferta h2 {
+    font-size: 40px;
+    color:#582417;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.oferta p {
+    font-size: 20px;
+    color:#F06C0C;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+}
+  
 .modal {
     display: none;
     position: fixed;
