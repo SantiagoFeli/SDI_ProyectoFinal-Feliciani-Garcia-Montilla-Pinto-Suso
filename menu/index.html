@@ -4,74 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caracas Coffee</title>
-    <link rel = "stylesheet" href = "./styles.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/index.css">
 </head>
 <body>
-    <header class = "sesion">
-        <a href = "#" class = "iniciar"><button>Iniciar sesión</button></a>
-        <a href = "#" class = "registrate"><button>Regístrate</button></a>
-    </header>
-    <hr class = "linea1">
-    <header class = "menu">
-        <nav class = "opciones1">
-            <ul class = "opciones">
-                <li><a href = "#">MENÚ</a></li>
-                <li><a href = "#">CONÓCENOS</a></li>
-            </ul>
-        </nav>
-        <div class = "logo">
-            <img src = "./Caracas Coffee.png" alt = "Logo Caracas Coffee">
-        </div>
-        <nav class = "opciones2">
-            <ul class = "opciones">
-                <li><a href = "#">PEDIDO</a></li>
-                <li><a href = "#">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header>
-    <hr class = "linea2">
-    
-    <section class = "oferta">
-        <div class = "oferta-texto">
-            <h2>¡DESPIERTA TUS SENTIDOS CON EL MEJOR CAFÉ!</h2>
-            <p>Uniéndote a ccs coffee club obtendás ofertas exclusivas y mucho más! Con tu primera compra obtendrás 2 bebidas gratis.</p>
-            <a href = "#" class = "suscribete"><button>SUSCRÍBETE</button></a>
-        </div>
-        <div class = "cafe">
-            <img src = "./Ccs Coffee Bar.png" alt = "Ccs Coffee Bar">
-        </div>
-    </section>
-
-    <div id="loginModal" class="modal">
-        <div class="modal-content">
-            <span class="close" id="closeLogin">&times;</span>
-            <h2>Iniciar Sesión</h2>
-            <form>
-                <label for="loginEmail">Email:</label>
-                <input type="email" id="loginEmail" name="loginEmail" required>
-                <label for="loginPassword">Password:</label>
-                <input type="password" id="loginPassword" name="loginPassword" required>
-                <button type="submit">Iniciar Sesión</button>
-            </form>
-        </div>
-    </div>
-
-    <div id="registerModal" class="modal">
-        <div class="modal-content">
-            <span class="close" id="closeRegister">&times;</span>
-            <h2>Regístrate</h2>
-            <form>
-                <label for="registerEmail">Email:</label>
-                <input type="email" id="registerEmail" name="registerEmail" required>
-                <label for="registerPassword">Password:</label>
-                <input type="password" id="registerPassword" name="registerPassword" required>
-                <label for="confirmPassword">Confirm Password:</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" required>
-                <button type="submit">Regístrate</button>
-            </form>
-        </div>
-    </div>
-
-    <script src="./script.js"></script>
+    <div id="root"></div>
 </body>
 </html>
